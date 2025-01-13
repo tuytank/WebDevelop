@@ -1,0 +1,55 @@
+/*1. Sử dụng Media Queries*/
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/*2. Thiết kế layout theo Grid hoặc Flexbox*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+<!--3. Tối ưu hóa hình ảnh (Responsive Images)-->
+
+<img src="small.jpg" 
+     srcset="small.jpg 600w, medium.jpg 1200w, large.jpg 2000w" 
+     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw" 
+     alt="Responsive Image">
+
+<!--4. Sử dụng Framework Frontend (Bootstrap, Tailwind CSS)-->
+
+<div class="row">
+  <div class="col-12 col-md-6">Cột 1</div>
+  <div class="col-12 col-md-6">Cột 2</div>
+</div>
+
+/*5. Tối ưu hóa phông chữ và nút bấm*/
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+<!--6. Sử dụng viewport meta tag-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+/*7. Ẩn hoặc hiển thị nội dung theo thiết bị*/
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
