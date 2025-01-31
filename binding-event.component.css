@@ -1,0 +1,17 @@
+input {
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
