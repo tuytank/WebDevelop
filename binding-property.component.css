@@ -1,0 +1,12 @@
+div {
+    margin: 10px 0;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[disabled] {
+    background-color: #e0e0e0;
+}
+  
