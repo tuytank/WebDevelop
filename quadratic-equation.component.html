@@ -1,0 +1,48 @@
+<table border="1">
+    <tr>
+        <td colspan="2" style="font-weight: bold; background-color: aquamarine; font-family: 'Times New Roman', Times, serif;" align="center">
+            Giải phương trình bậc 2 online
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hệ số a
+        </td>
+        <td>
+            <input [(ngModel)]="a" type="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hệ số b
+        </td>
+        <td>
+            <input [(ngModel)]="b" type="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hệ số c
+        </td>
+        <td>
+            <input [(ngModel)]="c" type="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Kết quả
+        </td>
+        <td id="kq">
+            {{result}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+        </td>
+        <td>
+            <input type="button" value="Giải phương trình" (click)="solveEquation()">
+            <input type="button" value="Xóa trắng" (click)="clearFields()">
+        </td>
+    </tr>
+</table> 
