@@ -1,0 +1,56 @@
+
+
+
+<table border="1">
+    <tr>
+        <td colspan="2">
+            <h3 style="color: blue;">Chuyển đổi Dương lịch thành Âm lịch</h3>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label for="day">Ngày:</label>
+            <select [(ngModel)]="selectedDay">
+            <option *ngFor="let day of days" [value]="day">{{ day }}</option>
+            </select>
+
+            <label for="month">Tháng:</label>
+            <select [(ngModel)]="selectedMonth">
+            <option *ngFor="let month of months" [value]="month">{{ month }}</option>
+            </select>
+
+            <label for="year">Năm:</label>
+            <select [(ngModel)]="selectedYear">
+            <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+            </select>
+
+            <input type="button" value="Chuyển đổi" (click)="chuyenDoi()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2">
+            <h3 style="color: blue;">Âm lịch</h3>
+        </td>
+    </tr>
+    <tr>
+    <td>Thứ trong tuần</td>
+    <td style="color: red;">{{ dayOfWeek }}</td>
+    </tr>
+    <tr>
+    <td>Ngày tháng năm âm</td>
+    <td style="color: red;">{{ lunarDay }}/{{ lunarMonth }}/{{ lunarYear }}</td>
+    </tr>
+    <tr>
+    <td>Năm</td>
+    <td style="color: red;">{{ canChiYear }}</td>
+    </tr>
+    <tr>
+    <td>Tháng</td>
+    <td style="color: red;">{{ canChiMonth }}</td>
+    </tr>
+    <tr>
+    <td>Ngày</td>
+    <td style="color: red;">{{ canChiDay }}</td>
+    </tr>
+
+</table>
