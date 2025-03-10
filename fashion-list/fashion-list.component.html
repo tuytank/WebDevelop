@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Fashion List</h2>
+
+  <!-- Dropdown Filter theo Style -->
+  <label for="style">Chọn Style:</label>
+  <select id="style" [(ngModel)]="selectedStyle" (change)="filterByStyle()">
+    <option value="">Tất cả</option>
+    <option *ngFor="let s of styles" [value]="s">{{ s }}</option>
+  </select>
+
+  <!-- Hiển thị danh sách Fashion -->
+  <div class="fashion-list">
+    <div *ngFor="let fashion of fashions" class="fashion-item">
+      <img [src]="fashion.fashion_image" alt="Fashion Image">
+      <h3>{{ fashion.fashion_subject }}</h3>
+      <p>{{ fashion.fashion_detail }}</p>
+    </div>
+  </div>
+</div>
